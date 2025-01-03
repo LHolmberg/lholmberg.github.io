@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lukas Holmberg | Architecture & Engineering</title>
+  <!-- Font Awesome for Icons (remove `integrity` if it conflicts) -->
+  <link 
+    rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    crossorigin="anonymous"
+  />
+  <style>
+    /* Basic reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Page background */
+    body {
+      background-color: #333333;
+      font-family: "Avenir", sans-serif;
+      color: #FFFFFF;
+      line-height: 1.5;
+    }
+
+    /* Container for all content */
+    .container {
+      max-width: 1100px; /* Adjust to your preference */
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    /* Header style */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      margin-bottom: 60px;
+    }
+
+    .title {
+      font-size: 1.5rem; 
+      font-weight: 100;
+      letter-spacing: 0.05rem;
+    }
+
+    /* Subtitle container – holds icon links */
+    .subtitle {
+      display: flex;
+      align-items: center; /* Vertically center the text and icons */
+      gap: 1.5rem;         /* Spacing between text and icon list */
+      font-size: 1rem; 
+      font-weight: 100;
+      text-transform: uppercase;
+      opacity: 0.8;
+      letter-spacing: 0.05rem;
+    }
+
+    /* Icon list container */
+    .contact-links {
+      display: flex;
+      gap: 1rem; /* Spacing between icons */
+    }
+
+    /* Minimal link styling (optional) */
+    a {
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Icon size adjustment */
+    .fa-envelope, .fa-github, .fa-phone {
+      font-size: 1.1rem; 
+    }
+
+    /* 
+      A column layout that stacks:
+      1) Issuu embed on top
+      2) Narrow paragraph container below, aligned to the right
+    */
+    .content-column {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; /* Left-align items by default */
+      gap: 2rem;              /* Spacing between embed and paragraph */
+    }
+
+    /* Iframe container: 
+       - Maintains aspect ratio for the embed
+       - 100% width inside the container
+    */
+    .iframe-container {
+      position: relative;
+      width: 100%; 
+      /* Adjust the padding-bottom to control the aspect ratio of the embed */
+      padding-bottom: 60%; 
+      overflow: hidden;
+    }
+    .iframe-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    /* 
+      Paragraph container:
+      - Aligned to the right in the column
+      - Narrow max-width
+    */
+    .paragraph-container {
+      align-self: flex-end; /* Moves the box to the right */
+      max-width: 300px;     /* Narrow paragraph width */
+    }
+
+    /* 
+      Responsive behavior:
+      If you need special rules for narrower screens,
+      you could add a media query, but for this layout, 
+      it’s already stacking vertically.
+    */
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Header Section -->
+    <div class="header">
+      <div class="title">Lukas Holmberg</div>
+      <!-- Subtitle section with icon links -->
+      <div class="subtitle">
+        <div class="contact-links">
+          <!-- GitHub -->
+          <a href="https://github.com/your_github_username" target="_blank" aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <!-- Mail -->
+          <a href="mailto:your_email@example.com" aria-label="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Column layout for Issuu embed (top) + paragraph (below/right) -->
+    <div class="content-column">
+      <div class="iframe-container">
+        <iframe 
+          allowfullscreen="true" 
+          frameborder="0" 
+          src="https://e.issuu.com/issuu-reader3-embed-files/latest/issuu-landing-page-embed.html?u=soapy-art&amp;d=graphic_design_portfolio" 
+          title="An Issuu publication">
+        </iframe>
+      </div>
+
+      <div class="paragraph-container">
+        <p>
+          Here’s a narrow text column that appears below the Issuu embed, 
+          but is aligned to the right. You can add any additional 
+          descriptions or notes about your work here.
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
