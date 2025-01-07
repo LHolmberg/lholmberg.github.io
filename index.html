@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Lukas Holmberg | Architecture & Engineering</title>
   <!-- Font Awesome for Icons (remove `integrity` if it conflicts) -->
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+
   <link 
     rel="stylesheet" 
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
@@ -127,7 +129,9 @@
       you could add a media query, but for this layout, 
       it’s already stacking vertically.
     */
+ 
   </style>
+ 
 </head>
 <body>
 
@@ -139,26 +143,21 @@
       <div class="subtitle">
         <div class="contact-links">
           <!-- GitHub -->
-          <a href="https://github.com/your_github_username" target="_blank" aria-label="GitHub">
+          <a href="https://github.com/lholmberg" target="_blank" aria-label="GitHub">
             <i class="fa-brands fa-github"></i>
           </a>
           <!-- Mail -->
-          <a href="mailto:your_email@example.com" aria-label="Email">
+          <a href="mailto:lukasholmberg@outlook.com" aria-label="Email">
             <i class="fa-solid fa-envelope"></i>
           </a>
         </div>
       </div>
     </div>
-  
+    
     <!-- Column layout for Issuu embed (top) + paragraph (below/right) -->
     <div class="content-column">
       <div class="iframe-container">
-        <iframe 
-          allowfullscreen="true" 
-          frameborder="0" 
-          src="https://e.issuu.com/embed.html?d=portfolio_a4_2025&u=lukashol"
-          title="An Issuu publication">
-        </iframe>
+        <iframe allow="clipboard-write" sandbox="allow-top-navigation allow-top-navigation-by-user-activation allow-downloads allow-scripts allow-same-origin allow-popups allow-modals allow-popups-to-escape-sandbox allow-forms" allowfullscreen="true" style="position:absolute;border:none;width:100%;height:100%;left:0;right:0;top:0;bottom:0;" src="https://e.issuu.com/embed.html?d=lukasholmbergportfolio2025&u=lukashol"></iframe>
       </div>
 
       <div class="paragraph-container">
@@ -171,6 +170,10 @@
     </div>
 
   </div>
-
+  <style>
+    [data-testid="issuu-branding-line"] {
+      display: none !important;
+    }
+  </style>
 </body>
 </html>

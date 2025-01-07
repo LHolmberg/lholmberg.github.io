@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Lager_1" data-name="Lager 1" xmlns="http://www.w3.org/2000/svg" width="24.3001614mm" height="26.4834821mm" viewBox="0 0 68.8823482 75.0712891">
+  <defs>
+    <style>
+      .cls-1 {
+        font-size: 46px;
+      }
+
+      .cls-2 {
+        font-size: 68px;
+      }
+
+      .cls-3 {
+        fill: #1d1d1b;
+        font-family: Avenir-Light, Avenir;
+        font-weight: 100;
+      }
+    </style>
+  </defs>
+  <text class="cls-3" transform="translate(0 58.0712719)"><tspan class="cls-2" x="0" y="0">L</tspan><tspan class="cls-1" x="34.0000038" y="0">H</tspan></text>
+</svg>
